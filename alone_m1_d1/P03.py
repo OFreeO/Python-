@@ -39,15 +39,17 @@ def doA():
 
 def doB(length,weight):
     try:
+        plt.axis([0,50,0,1000])
+
+        plt.scatter(weight,length)
+
         fish_data = [weight,length]
 
         print(fish_data)
 
         plt.scatter(length,weight, marker='^')
 
-        plt.xlabel('length')
-        plt.ylabel('weight')
-        plt.savefig('result.jpg')
+        plt.savefig('bream.jpg')
 
     except Exception as e:
         print(e)

@@ -25,7 +25,7 @@ class Myapp(QWidget):
         length = self.YV.text()
         weight = self.XV.text()
         P03.doB(length,weight)
-        pm = QPixmap('result.jpg')
+        pm = QPixmap('bream.jpg')
         self.qlabel.setPixmap(pm)
         self.qlabel.resize(pm.width(), pm.height())
 
